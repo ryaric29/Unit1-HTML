@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Forms</title>
 </head>
-<form action="">
+<form action="results.html" method="get">
     <!-- date -->
 
     <body>
@@ -51,6 +51,9 @@
                 <td><textarea name="msg" id="msg" rows="4"></textarea></td>
             </tr>
             <!-- Radio Button -->
+            <tr>\
+
+            </tr>
             <tr>
                 <td>Grade</td>
                 <td>
@@ -58,8 +61,33 @@
                         <input type="radio" name="Grade" value="10"> 10th</label>
                 </td>
             </tr>
-        </table>
+            <!-- Checkboxes -->
+            <tr>\
 
+            </tr>
+            <tr>
+                <td>Grade</td>
+                <td>
+                    <label><input type="checkbox" name="Grade" value="9"> 9th
+                        <input type="checkbox" name="Grade" value="10"> 10th
+                        <input type="checkbox" name="Grade" value="11">11th</label>
+                </td>
+            </tr>
+            <!-- Select drop down -->
+            <tr>
+                <td>Favorite Sports</td>
+                <td><label for="sports"><select name="sports" id="sports">
+                            <option value="Baseball">Baseball</option>
+                            <option value="Football">Football</option>
+                            <option value="Soccer">Soccer</option>
+                        </select></label></td>
+            </tr>
+
+        </table>
+        <!-- submit using input -->
+        <input type="submit" value="submit">
+        <!-- submit using button -->
+        <button type="submit">submit</button>
 </form>
 </body>
 
